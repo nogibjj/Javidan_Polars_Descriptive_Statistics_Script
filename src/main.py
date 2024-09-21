@@ -71,8 +71,8 @@ def create_histogram( dataframe, column, img_save_path = None ):
     plt.xlabel(column)
     plt.ylabel('Frequency')
     plt.grid(True)
+    plt.savefig(img_save_path, dpi=300, bbox_inches='tight')
     plt.show()
-    # plt.savefig(img_save_path, dpi=300, bbox_inches='tight')
     plt.close()
 
     return plt
@@ -88,9 +88,9 @@ def create_scatter_plot(dataframe, x_col, y_col, img_save_path = None ):
     plt.xlabel('X Values')
     plt.ylabel('Y Values')
     plt.grid(True)
+    plt.savefig(img_save_path, dpi=300, bbox_inches='tight')  # Save as a PNG file
     plt.show()
     # Save the scatter plot to a file
-    # plt.savefig(img_save_path, dpi=300, bbox_inches='tight')  # Save as a PNG file
 
     # Optional: Clear the figure after saving
     plt.close()
