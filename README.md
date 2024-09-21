@@ -53,7 +53,7 @@ This project automatically generates csv with the random data each time it runs.
     ```bash
     python main.py
     ```
-
+ 
 ## Usage
 
 - Generate the data using generate_csv
