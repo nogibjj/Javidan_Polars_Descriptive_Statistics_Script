@@ -5,3 +5,6 @@ test_code:
 lint:
 	pylint --errors-only src/main.py
 	pylint --errors-only test/test_main.py
+	
+format:
+	black src/*.py
